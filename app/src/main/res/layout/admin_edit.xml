@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AdminEdit">
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/DarkPink">
+        <TextView
+            android:id="@+id/textViewEventDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Details of Post"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+
+            android:gravity="center"/>
+    </RelativeLayout>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head">
+
+        <LinearLayout
+        android:id="@+id/eventDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="Edit details of post"
+            android:textColor="@color/Cyan"
+            android:layout_marginBottom="@dimen/volunteer_form_margin_top"
+            android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:backgroundTint="@color/amber"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Delete Post " />
+</RelativeLayout>

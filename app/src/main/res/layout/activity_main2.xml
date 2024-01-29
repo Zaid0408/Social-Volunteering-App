@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:orientation="vertical"
+        android:background="@color/DarkPink">
+                    <TextView
+                        android:id="@+id/SignOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:clickable="true"
+                        android:layout_gravity="top|right"
+                        android:gravity="end"
+                        android:onClick="openLoginPage"
+                        android:text="Sign Out" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Cyan"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Social Volunteering App"
+                        android:textSize="24sp" />
+
+
+        <!-- Add any additional views you want in the header here -->
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDDEDE">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:text="Here you can check out updates for Events by Different NGO's!"
+                android:textSize="13sp" />
+
+            <!-- Dynamically added post layouts will go here -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:tools="http://schemas.android.com/tools"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:ignore="ExtraText"-->
+<!--        tools:context=".MainActivity2"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@color/DarkPink">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+
+<!--            android:orientation="vertical"-->
+<!--            android:background="@color/customColorAccent">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/SignOut"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textStyle="bold"-->
+<!--                android:clickable="true"-->
+<!--                android:onClick="openLoginPage"-->
+<!--                android:text="Sign Out" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:gravity="center"-->
+
+<!--                android:text="Social Volunteering App"-->
+<!--                android:textSize="24sp" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            >-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/container"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center">-->
+
+
+<!--                &lt;!&ndash; res/layout/dynamic_post_layout.xml &ndash;&gt;-->
+<!--                <LinearLayout-->
+<!--                    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                    android:id="@+id/post1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/post_container_height"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@android:color/holo_blue_light"-->
+<!--                    android:layout_margin="16dp"-->
+<!--                    android:padding="16dp">-->
+
+<!--                    &lt;!&ndash; TextView for the title &ndash;&gt;-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/titleTextView"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="17sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="#FF0000"-->
+<!--                        android:text="Organisation 1"-->
+<!--                        />-->
+
+<!--                    &lt;!&ndash; TextView for the content &ndash;&gt;-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/contentTextView"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="13sp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:text="Volunteer for so and so event for organisation 1"-->
+<!--                        android:layout_marginBottom="5dp"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="@dimen/post_image_height"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:layout_marginBottom="20dp"-->
+<!--                        android:layout_marginRight="20dp"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:src="@drawable/groupofhappypeople2"-->
+<!--                        android:padding="10dp"/>-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/post_container_height"-->
+<!--                    android:id="@+id/post2"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@android:color/holo_blue_light"-->
+<!--                    android:layout_margin="16dp"-->
+<!--                    android:padding="16dp">-->
+
+<!--                    &lt;!&ndash; TextView for the title &ndash;&gt;-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/titleTextView1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="17sp"-->
+<!--                        android:text="Organisation 2"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="#FF0000"-->
+<!--                        />-->
+
+<!--                    &lt;!&ndash; TextView for the content &ndash;&gt;-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/contentTextView1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="13sp"-->
+<!--                        android:text="Volunteer for so and so event for organisation 1"-->
+
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:layout_marginBottom="5dp"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="@dimen/post_image_height"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:layout_marginBottom="20dp"-->
+<!--                        android:layout_marginRight="20dp"-->
+<!--                        android:src="@drawable/images30"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:padding="10dp"/>-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/post_container_height"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/post3"-->
+<!--                    android:background="@android:color/holo_blue_light"-->
+<!--                    android:layout_margin="16dp"-->
+<!--                    android:padding="16dp">-->
+
+<!--                    &lt;!&ndash; TextView for the title &ndash;&gt;-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/titleTextView2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="17sp"-->
+<!--                        android:text="Organisation 3"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="#FF0000"-->
+<!--                        />-->
+
+<!--                    &lt;!&ndash; TextView for the content &ndash;&gt;-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/contentTextView2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="13sp"-->
+<!--                        android:text="Volunteer for so and so event for organisation 1"-->
+
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:layout_marginBottom="5dp"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="@dimen/post_image_height"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:layout_marginBottom="20dp"-->
+<!--                        android:src="@drawable/sad1"-->
+<!--                        android:layout_marginRight="20dp"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:padding="10dp"/>-->
+<!--                </LinearLayout>-->
+
+
+
+
+
+<!--            </LinearLayout>-->
+<!--        </ScrollView>-->
+
+
+
+<!--    </LinearLayout>-->

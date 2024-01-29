@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/DarkPink">
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:src="@drawable/logopreview" />
+
+
+
+    <TextView
+        android:id="@+id/WelcomeId"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/ScrollView"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Organization signup"
+        android:textColor="@color/Cyan"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="20dp">
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColorHint="@color/black"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:hint="Enter Organization Name"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                    android:id="@+id/passwordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textColorHint="@color/black"
+                    android:layout_marginBottom="20dp"
+                    android:autofillHints=""
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:id="@+id/confirmPasswordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/black"
+                    android:autofillHints=""
+                    android:textColorHint="@color/black"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="Enter Description or about organization"
+                android:padding="8dp"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+            <EditText
+                android:id="@+id/OrgPhone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:hint="Enter Contact"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+            <EditText
+                android:id="@+id/OrgLocation"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="60dp"
+                android:background="@color/white"
+                android:hint="Enter Location"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <Button
+                    android:id="@+id/SignUp"
+                    android:layout_width="120dp"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="60dp"
+                    android:background="@color/customColorAccent"
+                    android:text="Sign Up"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

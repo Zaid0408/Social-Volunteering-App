@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/gradient_background_2.xml -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="@dimen/card_margin"
+    android:insetRight="@dimen/card_margin"
+    android:insetTop="@dimen/card_margin"
+    android:insetBottom="@dimen/card_margin">
+    <layer-list>
+        <!-- Background shape with gradient -->
+        <item>
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/card_corner_radius" />
+                <gradient
+                    android:startColor="#2A5579"
+                    android:endColor="#78AFB2"
+                    android:angle="135" />
+            </shape>
+        </item>
+        <!-- Add padding to ensure content fits within the boundaries -->
+        <item android:left="@dimen/card_padding"
+            android:right="@dimen/card_padding"
+            android:top="@dimen/card_padding"
+            android:bottom="@dimen/card_padding">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/card_corner_radius" />
+                <solid android:color="@android:color/transparent" />
+            </shape>
+        </item>
+    </layer-list>
+</inset>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Social Volunteering App</string>
+    <dimen name="post_container_height">250dp</dimen>
+    <dimen name="post_image_height">150dp</dimen>
+    <dimen name="volunteer_form_edittext_height">48dp</dimen>
+    <dimen name="volunteer_form_margin_top">8dp</dimen>
+    <dimen name="volunteer_form_textview_height">48dp</dimen>
+    <dimen name="customTextSize">16sp</dimen>
+    <dimen name="card_elevation">6dp</dimen>
+    <dimen name="card_corner_radius">15dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+
+
+</resources>

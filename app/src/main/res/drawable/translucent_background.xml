@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/translucent_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#80FFFFFF"/> <!-- Adjust the transparency as needed (80 corresponds to 50% opacity) -->
+    <corners android:radius="12dp"/>
+    <stroke
+        android:width="2dp"
+        android:color="#DADADA" />
+</shape>
